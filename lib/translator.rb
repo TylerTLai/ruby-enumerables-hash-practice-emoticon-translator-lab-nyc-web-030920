@@ -29,9 +29,11 @@ def get_japanese_emoticon(path, emoticon)
 
   library_result["get_emoticon"].each do |key, value|
     if emoticon == value
-      value
+      return value
     end
   end 
+
+end
   
 end
 
