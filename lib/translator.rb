@@ -36,18 +36,6 @@ def get_japanese_emoticon(path, emoticon)
   end
 end
 
-def get_japanese_emoticon(file_path, english_emoticon)
-  comparison_hash = load_library(file_path)
-   comparison_hash[:get_emoticon].each do |english, japanese|
-      if english == english_emoticon
-      return japanese
-   end
- end
- return "Sorry, that emoticon was not found"
-end
-
-
-
 # binding.pry
 
 def get_english_meaning(path, emoticon)
