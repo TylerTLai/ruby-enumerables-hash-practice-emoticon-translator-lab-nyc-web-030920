@@ -33,7 +33,7 @@ def get_japanese_emoticon(path, emoticon)
     end
     
   end
-  
+  binding.pry
   return "not found"
   
 end
