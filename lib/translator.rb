@@ -28,14 +28,15 @@ def get_japanese_emoticon(path, emoticon)
   result = load_library(path)
   
   result["get_emoticon"].each do |key, value|
-    if value == emoticon
-      result["get_emoticon"][value]
-    end 
+    p key
+    # if value == emoticon
+    #   result["get_emoticon"][value]
+    # end 
   end 
   
 end
 
-# binding.pry
+binding.pry
 
 def get_english_meaning(path, emoticon)
   load_library(path)
