@@ -25,18 +25,21 @@ end
 
 def get_japanese_emoticon(path, emoticon)
    
-  result = load_library(path)
+  library_result = load_library(path)
+  result = ""
   
-  result["get_emoticon"].each do |key, value|
+  library_result["get_emoticon"].each do |key, value|
     p key
-    # if value == emoticon
-    #   result["get_emoticon"][value]
-    # end 
+    if value == emoticon
+      result = library_result["get_emoticon"][value]
+    end 
   end 
+  
+  result
   
 end
 
-binding.pry
+# binding.pry
 
 def get_english_meaning(path, emoticon)
   load_library(path)
