@@ -27,14 +27,12 @@ def get_japanese_emoticon(path, emoticon)
    
   library_result = load_library(path)
 
-  library_result["get_emoticon"].each do |key, value|
+  library_result[:get_emoticon].each do |key, value|
     if emoticon == value
       return value
     end
     
   end
-  binding.pry
-  return "not found"
   
 end
 
