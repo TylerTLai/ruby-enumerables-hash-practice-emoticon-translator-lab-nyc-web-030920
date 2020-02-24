@@ -28,12 +28,14 @@ def get_japanese_emoticon(path, emoticon)
   library_result = load_library(path)
 
   library_result["get_emoticon"].each do |key, value|
-    if emoticon == value
-      return value
-    end
-    
+    value.each do |value1|
+      
+      if emoticon == value1
+        return value1
+      end
+      
+    end 
   end
-  
 end
 
 # binding.pry
