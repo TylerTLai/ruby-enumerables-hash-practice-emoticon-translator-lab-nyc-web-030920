@@ -30,7 +30,7 @@ def get_japanese_emoticon(path, emoticon)
   library_result["get_emoticon"].each do |key, value|
     
       if emoticon == key
-        return value1
+        return value
       end
       
   end
