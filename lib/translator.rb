@@ -31,7 +31,11 @@ def get_japanese_emoticon(path, emoticon)
     if emoticon == value
       return value
     end
-  end 
+    
+  end
+  
+  
+  
 end
 
 # binding.pry
